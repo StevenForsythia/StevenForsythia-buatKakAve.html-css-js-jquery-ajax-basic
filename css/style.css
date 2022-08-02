@@ -1,0 +1,362 @@
+*, body, html{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../font/Burbank\ Big\ Condensed\ Font.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+#particles-js {
+    height: 99vh;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+}
+
+#particles-js-surat {
+    height: 99vh;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+}
+
+.containerWrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+    display: none;
+    
+}
+
+.container {
+    background-color: #ffeaea;
+    width: 100%;
+    height: 100vh;
+}
+
+.containerTop {
+    position: absolute;
+    top: 0%;
+    height: 15vh;
+    width: 100%;
+    background-color: #ffb0b0;
+}
+
+.containerBottom {
+    position: absolute;
+    bottom: 0%;
+    height: 15vh;
+    width: 100%;
+    background-color: #ffb0b0;
+}
+
+.containerGift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    bottom: 2%;
+}
+
+.scrollingText {
+    width: 59%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollingText > marquee {
+    color: #ffb0b0;
+    font-family: myFont;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.giftWrapper {
+    display: grid;
+    column-gap: 7%;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+}
+
+.gift {
+    width: 264px;
+    height: auto;
+}
+
+.gift > img {
+    height: auto;
+    width: 275px;
+    transition: all 0.3s ease-in-out;
+}
+
+.gift > img:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.hadiahWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    letter-spacing: 0.2px;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+}
+
+.hadiahPertama {
+    width: 500px;
+    height: 260px;
+    background-color: white;
+    visibility: visible;
+    z-index: 3;
+    display: none;
+}
+
+.hadiahKedua {
+    width: 500px;
+    height: 260px;
+    background-color: white;
+    visibility: visible;
+    z-index: 3;
+    display: none;
+}
+
+.hadiahKetiga {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    display: none;
+}
+
+.hadiahKetiga > img {
+    width: 500px;
+    height: auto;
+}
+
+.title {
+    margin: 0% 10%;
+    margin-top: 10%;
+}
+
+.text {
+    margin: 0% 10%;
+    margin-top: 2%;
+}
+
+.close {
+  position: absolute;
+  top: 34%;
+  left: 64%;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+  font-size: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.close:hover {
+  color: red;
+}
+
+.close2 {
+    position: absolute;
+    top: 6.5%;
+    left: 64.3%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+  }
+  
+  .close2 > p:hover {
+    color: red;
+  }
+
+  .close2 > p {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+  }
+
+.suratWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 1%;
+    z-index: 1;
+}
+
+.suratWrapper > img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transform: rotate(-20deg);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.suratWrapper > img:hover {
+    width: 350px;
+    height: auto;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.isiSuratContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 55.5%;
+}
+
+.isiSuratWrapper {
+    position: absolute;
+    width: 345px;
+    height: 265px;
+    background-color: white;
+    z-index: 2;
+    display: none;
+    bottom: 0%;
+}
+
+.isiSurat {
+    letter-spacing: 0.2px;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    margin: 10%;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+}
+
+.music > p {
+    color: #ffeaea;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+}
+
+.blur {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+}
+
+.notResponsive {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    z-index: 6;
+    flex-direction: column;
+}
+
+.notResponsive > img {
+    height: auto;
+    width: 250px;
+    margin-bottom: 2px;
+}
+
+.notResponsive > p {
+    margin-top: 5px;
+    font-family: myFont;
+    font-size: 28px;
+    color: #f78552;
+}
+
+@media (max-width: 480px) {
+    .blur {
+        filter: blur(20px);
+        height: 100%;
+        width: 100%;
+    }
+
+    .giftWrapper {
+        display: none;
+    }
+
+    .notResponsive {
+        visibility: visible;
+        filter: blur(0px);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .blur {
+        filter: blur(20px);
+        height: 100%;
+        width: 100%;
+    }
+
+    .giftWrapper {
+        display: none;
+    }
+
+    .notResponsive {
+        visibility: visible;
+        filter: blur(0px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blur {
+        filter: blur(20px);
+        height: 100%;
+        width: 100%;
+    }
+
+    .giftWrapper {
+        display: none;
+    }
+
+    .notResponsive {
+        visibility: visible;
+        filter: blur(0px);
+    }
+}
